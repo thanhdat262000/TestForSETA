@@ -5,7 +5,6 @@
 function maxStringLength(array) {
   const stringLength = array.map((string) => string.length);
   stringLength.sort((a, b) => a - b);
-  console.log(stringLength);
   let count = 1;
   let maxCountlength;
   let maxCount = 0;
@@ -19,20 +18,6 @@ function maxStringLength(array) {
       count = 1;
     }
   }
-  console.log(maxCountlength);
   return array.filter((string) => string.length === maxCountlength);
 }
-console.log(
-  maxStringLength([
-    "a",
-    "ab",
-    "abc",
-    "cd",
-    "def",
-    "gbd",
-    "bsd",
-    "asd",
-    "sdf",
-    "g",
-  ])
-);
+module.exports = maxStringLength;
