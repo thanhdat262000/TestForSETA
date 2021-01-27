@@ -1,3 +1,4 @@
+import pool from "../db.js";
 export const getAllBooks = (req, res) => {
   pool.query("SELECT * FROM books ORDER BY id ASC", (error, results) => {
     if (error) {

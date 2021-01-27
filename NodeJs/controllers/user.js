@@ -1,3 +1,4 @@
+import pool from "../db.js";
 import bcrypt from "bcrypt";
 export const signUp = (re, res) => {
   const { name, email, phone, password } = req.body;

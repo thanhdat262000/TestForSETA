@@ -4,4 +4,4 @@ import { signUp, logIn } from "../controllers/user.js";
 const userRouter = express.userRouter();
 userRouter.post("/signup", signUp());
 userRouter.post("/login", logIn());
-export default UserRouter;
+export default userRouter;
